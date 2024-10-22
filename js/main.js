@@ -46,12 +46,12 @@ if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
             .then(registration => {
-                console.log('ServiceWorker registration successful:', registration.scope);
+                console.log('JDPS - ServiceWorker registration successful:', registration.scope);
             })
             .catch(error => {
-                console.error('ServiceWorker registration failed:', error);
+                console.error('JDPS - ServiceWorker registration failed:', error);
             });
     });
 } else {
-    console.log('Service Workers not supported in this browser');
+    console.log('JDPS - Service Workers not supported in this browser');
 }
